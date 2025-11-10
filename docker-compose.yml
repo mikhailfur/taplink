@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  taplink:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: taplink
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+    networks:
+      - taplink-network
+
+networks:
+  taplink-network:
+    driver: bridge
+
