@@ -3,8 +3,8 @@ import { LanguageProvider } from '@/contexts/LanguageContext'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'TapLink - Your Links, One Page',
-  description: 'Nier:Automata style link page',
+  title: 'MikhailFur TapLink',
+  description: 'MikhailFur TapLink',
 }
 
 export default function RootLayout({
